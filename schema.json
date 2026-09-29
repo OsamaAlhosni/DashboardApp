@@ -1,0 +1,24 @@
+{
+  "project": "DashboardApp",
+  "version": "1.0.0",
+  "endpoints": {
+    "metrics": {
+      "path": "/api/metrics/",
+      "method": "GET",
+      "response_schema": {
+        "total_users": "integer",
+        "active_sessions": "integer",
+        "system_health": "string"
+      }
+    },
+    "logs": {
+      "path": "/api/logs/",
+      "method": "GET",
+      "response_schema": {
+        "timestamp": "string",
+        "level": "string",
+        "message": "string"
+      }
+    }
+  }
+}
